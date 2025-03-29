@@ -25,7 +25,7 @@ MAP_TYPE = "satellite"  # نوع الخريطة (قمر صناعي)
 # إعدادات المجلدات والمسارات
 IMG_DIR = "images"  # مسار حفظ صور القمر الصناعي
 DETECTED_DIR = "DETECTED_FIELDS/FIELDS/farms"  # مسار حفظ الصور بعد التحليل
-MODEL_PATH = "yolov5/farms_project/field_detector/weights/best.pt"  # مسار نموذج YOLOv5 المدرب
+MODEL_PATH = "best.pt"  # مسار نموذج YOLOv5 المدرب
 ML_MODEL_PATH = "model/final_model.joblib"  # مسار نموذج تعلم الآلة المدرب
 OUTPUT_EXCEL = "output/detected_low_usage.xlsx"  # مسار حفظ ملف النتائج بصيغة Excel
 
