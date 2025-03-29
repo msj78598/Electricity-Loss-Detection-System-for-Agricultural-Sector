@@ -4,6 +4,7 @@
 # Base ------------------------------------------------------------------------
 opencv-python-headless
 joblib
+scikit-learn
 gitpython>=3.1.30
 matplotlib>=3.3
 numpy>=1.23.5
