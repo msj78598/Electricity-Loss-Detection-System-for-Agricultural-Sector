@@ -8,3 +8,12 @@ streamlit
 urllib3
 openpyxl
 opencv-python
+opencv-python
+torch
+torchvision
+pandas
+requests
+Pillow
+scikit-learn
+streamlit
+joblib
