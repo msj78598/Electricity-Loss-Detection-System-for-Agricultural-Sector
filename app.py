@@ -25,7 +25,7 @@ MAP_TYPE = "satellite"  # نوع الخريطة (قمر صناعي)
 # إعدادات المجلدات والمسارات
 IMG_DIR = os.path.join(os.getcwd(), "images")  # مسار حفظ صور القمر الصناعي
 DETECTED_DIR = os.path.join(os.getcwd(), "DETECTED_FIELDS", "FIELDS", "farms")  # مسار حفظ الصور بعد التحليل
-MODEL_PATH = "/workspaces/Electricity-Loss-Detection-System-for-Agricultural-Sector/best.pt"  # مسار نموذج YOLOv5 المدرب
+MODEL_PATH = "best.pt"  # مسار نموذج YOLOv5 المدرب
 ML_MODEL_PATH = "/workspaces/Electricity-Loss-Detection-System-for-Agricultural-Sector/final_model.joblib"  # مسار نموذج تعلم الآلة المدرب
 OUTPUT_EXCEL = os.path.join(os.getcwd(), "output", "detected_low_usage.xlsx")  # مسار حفظ ملف النتائج بصيغة Excel
 
