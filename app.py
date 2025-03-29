@@ -23,16 +23,16 @@ IMG_SIZE = 640  # حجم الصورة
 MAP_TYPE = "satellite"  # نوع الخريطة (قمر صناعي)
 
 # إعدادات المجلدات والمسارات
-IMG_DIR = "images"  # مسار حفظ صور القمر الصناعي
-DETECTED_DIR = "DETECTED_FIELDS/FIELDS/farms"  # مسار حفظ الصور بعد التحليل
-MODEL_PATH = "yolov5/farms_project/field_detector/weights/best.pt"  # مسار نموذج YOLOv5 المدرب
-ML_MODEL_PATH = "model/final_model.joblib"  # مسار نموذج تعلم الآلة المدرب
-OUTPUT_EXCEL = "output/detected_low_usage.xlsx"  # مسار حفظ ملف النتائج بصيغة Excel
+IMG_DIR = os.path.join(os.getcwd(), "images")  # مسار حفظ صور القمر الصناعي
+DETECTED_DIR = os.path.join(os.getcwd(), "DETECTED_FIELDS", "FIELDS", "farms")  # مسار حفظ الصور بعد التحليل
+MODEL_PATH = os.path.join(os.getcwd(), "yolov5", "farms_project", "field_detector", "weights", "best.pt")  # مسار نموذج YOLOv5 المدرب
+ML_MODEL_PATH = os.path.join(os.getcwd(), "model", "final_model.joblib")  # مسار نموذج تعلم الآلة المدرب
+OUTPUT_EXCEL = os.path.join(os.getcwd(), "output", "detected_low_usage.xlsx")  # مسار حفظ ملف النتائج بصيغة Excel
 
 # تحميل نموذج البيانات المطلوب تحليله
 st.subheader("📥 تحميل نموذج البيانات المطلوب تحليله")
-template_file = "C:/Users/Sec/Documents/DEEP/fram.xlsx"  # مسار نموذج البيانات
-st.download_button("📥 تحميل نموذج البيانات", open(template_file, "rb"), file_name=template_file)
+template_file = os.path.join(os.getcwd(), "fram.xlsx")  # مسار نموذج البيانات
+st.download_button("📥 تحميل نموذج البيانات", open(template_file, "rb"), file_name="fram.xlsx")
 
 # تعريف الحدود القصوى لاستهلاك الطاقة بناءً على سعة القواطع
 capacity_thresholds = {
