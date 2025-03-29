@@ -23,6 +23,7 @@ IMG_SIZE = 640  # حجم الصورة
 MAP_TYPE = "satellite"  # نوع الخريطة (قمر صناعي)
 
 # إعداد المسارات النسبية للملفات
+# إعداد المسارات النسبية للملفات
 IMG_DIR = os.path.join(os.getcwd(), "images")  # مسار حفظ صور القمر الصناعي
 DETECTED_DIR = os.path.join(os.getcwd(), "DETECTED_FIELDS", "FIELDS", "farms")  # مسار حفظ الصور بعد التحليل
 MODEL_PATH = os.path.join(os.getcwd(), "best.pt")  # مسار نموذج YOLOv5 المدرب
