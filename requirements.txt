@@ -1,8 +1,11 @@
-torch>=1.8.0
-opencv-python-headless
-scikit-learn
-joblib
-pandas
 streamlit
+pandas
+numpy
+torch
+torchvision
+torchaudio
+joblib
+scikit-learn
+Pillow
 requests
-pillow
+openpyxl
