@@ -29,10 +29,10 @@ MODEL_PATH = "yolov5/farms_project/field_detector/weights/best.pt"  # مسار �
 ML_MODEL_PATH = "model/final_model.joblib"  # مسار نموذج تعلم الآلة المدرب
 OUTPUT_EXCEL = "output/detected_low_usage.xlsx"  # مسار حفظ ملف النتائج بصيغة Excel
 
-# تحميل نموذج البيانات المطلوب تحليله
+# وضع ملف Excel الذي سيقوم المستخدم بتحميله
 st.subheader("📥 تحميل نموذج البيانات المطلوب تحليله")
-template_file = "C:/Users/Sec/Documents/DEEP/fram.xlsx"  # مسار نموذج البيانات
-st.download_button("📥 تحميل نموذج البيانات", open(template_file, "rb"), file_name=template_file)
+template_file = "assets/fram.xlsx"  # مسار نموذج البيانات داخل مجلد assets
+st.download_button("📥 تحميل نموذج البيانات", open(template_file, "rb"), file_name="fram.xlsx")
 
 # تعريف الحدود القصوى لاستهلاك الطاقة بناءً على سعة القواطع
 capacity_thresholds = {
