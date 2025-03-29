@@ -1,9 +1,18 @@
+# Base ------------------------------------------------------------------------
 opencv-python-headless
+torch
+torchvision
 joblib
 scikit-learn
-torch
+openpyxl
 pandas
 requests
 pillow
 streamlit
+matplotlib
 numpy
+psutil
+PyYAML
+gitpython
+tqdm
+ultralytics
