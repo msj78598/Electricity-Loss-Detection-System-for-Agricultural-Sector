@@ -7,5 +7,12 @@ Pillow
 scikit-learn
 streamlit
 joblib
+torch
+pandas
+requests
+Pillow
+joblib
+scikit-learn
+streamlit
 urllib3
 openpyxl
