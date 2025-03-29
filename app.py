@@ -26,7 +26,7 @@ MAP_TYPE = "satellite"  # نوع الخريطة (قمر صناعي)
 IMG_DIR = os.path.join(os.getcwd(), "images")  # مسار حفظ صور القمر الصناعي
 DETECTED_DIR = os.path.join(os.getcwd(), "DETECTED_FIELDS", "FIELDS", "farms")  # مسار حفظ الصور بعد التحليل
 MODEL_PATH = os.path.join(os.getcwd(), "best.pt")  # مسار نموذج YOLOv5 المدرب
-ML_MODEL_PATH = os.path.join(os.getcwd(), "model", "ml_model.pkl")  # مسار نموذج تعلم الآلة المدرب
+ML_MODEL_PATH = os.path.join(os.getcwd(), "model", "final_model.joblib")  # مسار نموذج تعلم الآلة المدرب
 OUTPUT_EXCEL = os.path.join(os.getcwd(), "output", "detected_low_usage.xlsx")  # مسار حفظ ملف النتائج بصيغة Excel
 
 # وضع ملف Excel الذي سيقوم المستخدم بتحميله
