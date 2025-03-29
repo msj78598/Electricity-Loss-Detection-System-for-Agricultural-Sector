@@ -1,0 +1,9 @@
+torch
+pandas
+requests
+Pillow
+joblib
+scikit-learn
+streamlit
+urllib3
+openpyxl
